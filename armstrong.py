@@ -1,16 +1,16 @@
 num = int(input("enter a number "))
 order = len(str(num))
 
-val = 0
+valu = 0
 
 temp = num
 
 while temp >0:
     digit = temp%10
-    val += digit ** order
+    valu += digit ** order
     temp//=10
 
-if num == val:
+if num == valu:
     print(num, "is an armstrong number")
 
 else:
